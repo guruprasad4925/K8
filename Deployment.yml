@@ -1,16 +1,16 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-   name: mrdevops
+   name: devadiga
 spec:
    replicas: 2
    selector:      # tells the controller which pods to watch/belong to
     matchLabels:
-     app: mrdevops
+     app: devadiga
    template:
       metadata:
         labels:
-          app: mrdevops
+          app: devadiga
       spec:
        containers:
         - name: devadiga
